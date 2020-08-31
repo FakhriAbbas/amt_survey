@@ -1,0 +1,142 @@
+{% extends "AMTSurvey/base.html" %}
+
+{% block page_title %}
+Part 1: Reading Habit
+{% endblock %}
+
+{% block page_direction %}
+As a baseline for this survey, we are interested in your current reading habit. <br>
+Please answer the next three question.
+{% endblock %}
+
+
+{% block content %}
+<div id="row3" class="row row1">
+    <div id="cell4" class="bs-cell col-sm-12 col-xs-12 cell1">
+      <span id="label3" class="col-xs-12 label2">
+          <h5>
+          1. How many books do you read each year (not including books required for courses or school)?
+          </h5>
+      </span>
+
+      <div id="cellwrapper1" class="col-md-offset-1 col-xs-12 cellwrapper1">
+          <span id="radiobutton1" class="radiobutton1">
+            <section>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q1_o1" name="q1">
+                  <label class="custom-control-label" for="defaultInline1">0 (None)</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q1_o2" name="q1">
+                  <label class="custom-control-label" for="defaultInline2">1 - 5 books</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q1_o3" name="q1">
+                  <label class="custom-control-label" for="defaultInline3">5 - 10 books</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q1_o4" name="q1">
+                  <label class="custom-control-label" for="defaultInline3">More than 10 book</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q1_o5" name="q1">
+                  <label class="custom-control-label" for="defaultInline3">Very often</label>
+                </div>
+
+              </section>
+          </span>
+      </div>
+
+      <span id="label4" class="col-xs-12 label2">
+          <h5>2. Do you like to read?</h5>
+      </span>
+      <div id="cellwrapper2" class="col-md-offset-1 col-xs-12 cellwrapper1">
+          <span id="radiobutton2" class="radiobutton1">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q2_o1" name="q2">
+                  <label class="custom-control-label" for="defaultInline1">Never</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q2_o2" name="q2">
+                  <label class="custom-control-label" for="defaultInline2">Sometimes</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q2_o3" name="q2">
+                  <label class="custom-control-label" for="defaultInline3">Neutral</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q2_o4" name="q2">
+                  <label class="custom-control-label" for="defaultInline3">Often</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q2_o5" name="q2">
+                  <label class="custom-control-label" for="defaultInline3">Very often</label>
+                </div>
+
+          </span>
+      </div>
+
+      <span id="label5" class="col-xs-12 label2">
+          <h5>3. Do you read as much as you like to?</h5>
+      </span>
+      <div id="cellwrapper3" class="col-md-offset-1 col-xs-12 cellwrapper1">
+          <span id="radiobutton3" class="radiobutton1">
+                 <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q3_o1" name="q3">
+                  <label class="custom-control-label" for="defaultInline1">Never</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q3_o2" name="q3">
+                  <label class="custom-control-label" for="defaultInline2">Sometimes</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q3_o3" name="q3">
+                  <label class="custom-control-label" for="defaultInline3">Neutral</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q3_o4" name="q3">
+                  <label class="custom-control-label" for="defaultInline3">Often</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="q3_o5" name="q3">
+                  <label class="custom-control-label" for="defaultInline3">Very often</label>
+                </div>
+
+          </span>
+      </div>
+    </div>
+  </div>
+
+<div id="bootstrapbox1" class="container-fluid">
+
+
+  <div id="row4" class="row row1">
+    <div id="cell5" class="bs-cell col-sm-12 col-xs-12 cell1">
+        <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'mental_model' %}'">
+            Proceed to Part 2
+        </button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>

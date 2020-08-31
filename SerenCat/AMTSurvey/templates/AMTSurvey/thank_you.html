@@ -1,0 +1,49 @@
+{% extends "AMTSurvey/base.html" %}
+{% load static %}
+
+
+{% block page_title %}
+Thank You!
+{% endblock %}
+
+{% block page_direction %}
+<br>
+<br>
+<div class="row">
+    <div class="col-md-6">
+    <p style="font-size:20px">
+
+        Thank You! for participating in our survey. Please copy the code below and paste it in MTurk form.
+
+    </p>
+    <p style="font-size:18px">
+        <span style="color:#275B9D">ASDKFD38843MNV98</span>
+    </p>
+
+    <p style="font-size:18px">
+        <span style="color:#8D8D8D">If you ran into issues, or would like to leave a message for us, please use the textarea in MTurk form.</span>
+    </p>
+
+
+    </div>
+    <div class="col-md-6">
+          <img id="image1" src="{% static 'images/PastedImage.png' %}" class="col-md-5 col-md-offset-7 col-xs-12 image1" />
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>

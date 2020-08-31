@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://secure-cdn-na.infragistics.com/igniteui/2015.2/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="https://secure-cdn-na.infragistics.com/igniteui/2015.2/latest/css/structure/infragistics.css" rel="stylesheet" />
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://secure-cdn-na.infragistics.com/igniteui/2015.2/latest/js/infragistics.core.js"></script>
+    <script src="https://secure-cdn-na.infragistics.com/igniteui/2015.2/latest/js/infragistics.lob.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="resources/indigo-codegen.js"></script>
+    <link rel="stylesheet" href="resources/indigo-codegen.css">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+
+    <style type="text/css">
+        body {
+          background-color: #FFFFFF;
+        }
+        /* Initial styles */
+        .bootstrapbox1 {
+            background-color: rgba(255,255,255,0);
+            border-radius: 0px;
+            padding: 0px 15px 0px 15px;
+        }
+        .button1{
+            background-color: #000000;
+            border-color: rgba(255,255,255,0);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 8px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+
+
+        .cell1 {
+            background-color: rgba(255,255,255,0);
+        }
+        .content1 {
+            overflow: hidden;
+        }
+        .image1 {
+            margin-bottom: 15px;
+        }
+        .label1 {
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 13px;
+            color: #282828;
+            margin-bottom: 15px;
+            white-space: pre-wrap;
+        }
+        .row1 {
+            background-color: rgba(255,255,255,0);
+        }
+        #button1 {
+            height: 35px;
+        }
+        #cell3 {
+            height: 70px;
+        }
+        #content1 {
+            position: relative;
+        }
+        #label1 {
+            display: inline-block;
+        }
+        #label2 {
+            display: inline-block;
+        }
+        /* Per state CSS */
+        /* State start */
+        .start #content1 {
+            height: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="content1" class="content1" name="screen">
+      <div id="bootstrapbox1" class="container-fluid">
+        <div id="row1" class="row row1">
+          <div id="cell1" class="bs-cell col-sm-9 col-md-12 col-xs-12 cell1">
+            <img id="image1" src="{% static 'images/book_PNG2120.png' %}" class="col-xs-12 image1" />
+          </div>
+        </div>
+        <div id="row2" class="row row1">
+          <div id="cell2" class="bs-cell col-sm-12 col-md-8 col-xs-12 cell1">
+            <span id="label1" class="col-xs-12 label1"><span style="font-size: 14px; font-weight: bold">Welcome to our books survey!<br></span><span style="font-size: 14px">This survey consists of </span><span style="font-size: 14px; color: #ff2e2e">four parts</span><span style="font-size: 14px">, after completing all parts you will receive a unique code.<br></span><span style="font-size: 14px">Please copy the unique code and paste it in the MTurk survey. This is how we can validate your response and approve your task.</span></span>
+          </div>
+          <div id="cell3" class="bs-cell col-sm-12 col-md-4 col-xs-12 cell1">
+            <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'pre_survey' %}'">
+                Take Survey!
+            </button>
+            <span id="label2" class="col-xs-12 label1">* This survey should take at least 20 minutes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      "use strict";
+
+      $(document).ready(function () {
+          // Go to first state
+          start();
+      });
+
+      // States
+      function start() {
+          // Overwrite Body class to Execute the interaction that takes to this new state
+          $("body")[0].className = "start";
+      }
+    </script>
+  </body>
+</html>

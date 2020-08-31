@@ -1,0 +1,53 @@
+{% extends "AMTSurvey/base.html" %}
+{% load static %}
+
+
+{% block page_title %}
+Part 3: Directions
+{% endblock %}
+
+{% block page_direction %}
+<br>
+<br>
+<div class="row">
+    <div class="col-md-6">
+    <p style="font-size:20px">
+
+        This part consists of two sessions. In each session, the system will display a list of 10 books.
+        For each book you have to indicate whether you would read the book or not.
+
+    </p>
+    <p style="font-size:18px">
+        Please note that we are asking of whether you <span style="color:#c40000">WOULD</span> read the book NOT if you have ever read the book.
+    </p>
+    </div>
+    <div class="col-md-6">
+          <img id="image1" src="{% static 'images/directions-icon-9.jpg' %}" class="col-md-5 col-md-offset-7 col-xs-12 image1" />
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="bootstrapbox1" class="container-fluid">
+  <div id="row4" class="row row1">
+    <div id="cell5" class="bs-cell col-sm-12 col-xs-12 cell1">
+        <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'session_1' %}'">
+            Proceed to Part 3 Session 1
+        </button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>

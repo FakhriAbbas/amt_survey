@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="adaf7d2e-8fcd-4f90-98ee-cf7c1d891a1d" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SerenCatWebsite" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank_you.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/thank_you.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SerenCat/SerenCat/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_survey.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/post_survey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="121" column="106" selection-start-line="121" selection-start-column="97" selection-end-line="121" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="41" column="92" lean-forward="true" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_card_curiosity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_curiosity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_card_familiar_interest_neither.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_familiar_interest_neither.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mental_model.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/mental_model.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="90" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="90" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="e#365#386#0" expanded="true" />
+                <element signature="e#447#453#0" expanded="true" />
+                <element signature="e#447#453#0" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+                <element signature="e#578#619#0" expanded="true" />
+                <element signature="e#615#621#0" expanded="true" />
+                <element signature="e#621#627#0" expanded="true" />
+                <element signature="e#627#633#0" expanded="true" />
+                <element signature="e#633#639#0" expanded="true" />
+                <element signature="e#639#645#0" expanded="true" />
+                <element signature="e#645#651#0" expanded="true" />
+                <element signature="e#651#657#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AMTSurvey/index.html</find>
+      <find>bootstrap</find>
+      <find>igniteui</find>
+      <find>django.contrib.staticfiles</find>
+      <find>image1</find>
+      <find>take</find>
+      <find>image</find>
+      <find>take suv</find>
+      <find>q1_</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SerenCat/SerenCat/urls.py" />
+        <option value="$PROJECT_DIR$/SerenCat/SerenCat/settings.py" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/bsae.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/index.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/pre_survey.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_familiar_interest_neither.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/mental_model.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/base.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/part_3_directions.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/session_1.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_curiosity.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_1.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_2.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/post_survey.html" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/urls.py" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/views.py" />
+        <option value="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/thank_you.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="621" />
+    <option name="y" value="361" />
+    <option name="width" value="1462" />
+    <option name="height" value="1009" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="AMTSurvey" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SerenCatWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SerenCatWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+              <item name="SerenCat" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey/static/images" />
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey" />
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes" />
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey/static/AMTSurvey" />
+      <recent name="$PROJECT_DIR$/SerenCat/AMTSurvey" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adaf7d2e-8fcd-4f90-98ee-cf7c1d891a1d" name="Default" comment="" />
+      <created>1596410255166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596410255166</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="621" y="361" width="1462" height="1009" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8590604" visible="true" weight="0.25329632" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3295838" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.1409396" side_tool="true" visible="true" weight="0.25329632" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_familiar_interest_neither.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/templates/AMTSurvey/index.html" />
+    <entry file="file://$PROJECT_DIR$/SerenCat/SerenCat/asgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/SerenCat/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/assets/js/src/pwa.js" />
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/static/AMTSurvey/assets/js/src/pwa.js" />
+    <entry file="file://$PROJECT_DIR$/SerenCat/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/SerenCat/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/pre_survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="97" column="50" selection-end-line="141" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/part_3_directions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="38" column="106" selection-end-line="52" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/mental_model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="90" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="e#365#386#0" expanded="true" />
+            <element signature="e#447#453#0" expanded="true" />
+            <element signature="e#447#453#0" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="e#578#619#0" expanded="true" />
+            <element signature="e#615#621#0" expanded="true" />
+            <element signature="e#621#627#0" expanded="true" />
+            <element signature="e#627#633#0" expanded="true" />
+            <element signature="e#633#639#0" expanded="true" />
+            <element signature="e#639#645#0" expanded="true" />
+            <element signature="e#645#651#0" expanded="true" />
+            <element signature="e#651#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_familiar_interest_neither.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/includes/book_card_curiosity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/session_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="41" column="92" lean-forward="true" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/post_survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="121" column="106" selection-start-line="121" selection-start-column="97" selection-end-line="121" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/AMTSurvey/templates/AMTSurvey/thank_you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SerenCat/SerenCat/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
