@@ -23,22 +23,22 @@ Based on your experience in looking at the books, please answer the next three q
             <section>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q1_o1" name="q1">
+                  <input type="radio" class="custom-control-input" id="q1_o1" name="q1"  value="0">
                   <label class="custom-control-label" for="defaultInline1">Familiar topic</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q1_o2" name="q1">
+                  <input type="radio" class="custom-control-input" id="q1_o2" name="q1"  value="1">
                   <label class="custom-control-label" for="defaultInline2">Interesting topic</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q1_o3" name="q1">
+                  <input type="radio" class="custom-control-input" id="q1_o3" name="q1"  value="2">
                   <label class="custom-control-label" for="defaultInline3">Both</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q1_o4" name="q1">
+                  <input type="radio" class="custom-control-input" id="q1_o4" name="q1"  value="3">
                   <label class="custom-control-label" for="defaultInline3">Neither</label>
                 </div>
 
@@ -52,27 +52,27 @@ Based on your experience in looking at the books, please answer the next three q
       <div id="cellwrapper2" class="col-md-offset-1 col-xs-12 cellwrapper1">
           <span id="radiobutton2" class="radiobutton1">
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q2_o1" name="q2">
+                  <input type="radio" class="custom-control-input" id="q2_o1" name="q2"  value="0">
                   <label class="custom-control-label" for="defaultInline1">Never</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q2_o2" name="q2">
+                  <input type="radio" class="custom-control-input" id="q2_o2" name="q2" value="1">
                   <label class="custom-control-label" for="defaultInline2">Sometimes</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q2_o3" name="q2">
+                  <input type="radio" class="custom-control-input" id="q2_o3" name="q2"  value="2">
                   <label class="custom-control-label" for="defaultInline3">Neutral</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q2_o4" name="q2">
+                  <input type="radio" class="custom-control-input" id="q2_o4" name="q2"  value="3">
                   <label class="custom-control-label" for="defaultInline3">Often</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q2_o5" name="q2">
+                  <input type="radio" class="custom-control-input" id="q2_o5" name="q2"  value="4">
                   <label class="custom-control-label" for="defaultInline3">Very often</label>
                 </div>
 
@@ -85,30 +85,14 @@ Based on your experience in looking at the books, please answer the next three q
       <div id="cellwrapper3" class="col-md-offset-1 col-xs-12 cellwrapper1">
           <span id="radiobutton3" class="radiobutton1">
                  <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q3_o1" name="q3">
-                  <label class="custom-control-label" for="defaultInline1">Never</label>
+                  <input type="radio" class="custom-control-input" id="q3_o1" name="q3"  value="0">
+                  <label class="custom-control-label" for="defaultInline1">Yes, I do.</label>
                 </div>
 
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q3_o2" name="q3">
-                  <label class="custom-control-label" for="defaultInline2">Sometimes</label>
+                  <input type="radio" class="custom-control-input" id="q3_o2" name="q3"  value="1">
+                  <label class="custom-control-label" for="defaultInline2">No, I don't.</label>
                 </div>
-
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q3_o3" name="q3">
-                  <label class="custom-control-label" for="defaultInline3">Neutral</label>
-                </div>
-
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q3_o4" name="q3">
-                  <label class="custom-control-label" for="defaultInline3">Often</label>
-                </div>
-
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="q3_o5" name="q3">
-                  <label class="custom-control-label" for="defaultInline3">Very often</label>
-                </div>
-
           </span>
       </div>
     </div>
@@ -119,7 +103,7 @@ Based on your experience in looking at the books, please answer the next three q
 
   <div id="row4" class="row row1">
     <div id="cell5" class="bs-cell col-sm-12 col-xs-12 cell1">
-        <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'thank_you' %}'">
+        <button id="button_post_survey" class="col-md-12 col-xs-12 button1"'">
             Proceed to Get Your Code
         </button>
     </div>

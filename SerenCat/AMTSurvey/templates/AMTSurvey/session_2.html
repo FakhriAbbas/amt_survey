@@ -17,20 +17,13 @@ Part 3: Session 2 of 2
 {% block content %}
 
 <div class="row">
+{% for book in books %}
+
     <div class="col-md-6">
-        {%include 'AMTSurvey/includes/book_card_curiosity.html' %}
+        {%include 'AMTSurvey/includes/book_card_curiosity.html' with data=book%}
     </div>
-    <div class="col-md-6">
-        {%include 'AMTSurvey/includes/book_card_curiosity.html' %}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        {%include 'AMTSurvey/includes/book_card_curiosity.html' %}
-    </div>
-    <div class="col-md-6">
-        {%include 'AMTSurvey/includes/book_card_curiosity.html' %}
-    </div>
+
+{% endfor %}
 </div>
 
 
@@ -39,7 +32,7 @@ Part 3: Session 2 of 2
 <div id="bootstrapbox1" class="container-fluid">
   <div id="row4" class="row row1">
     <div id="cell5" class="bs-cell col-sm-12 col-xs-12 cell1">
-        <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'post_survey' %}'">
+        <button id="session_2_button" class="col-md-12 col-xs-12 button1">
             Proceed to Part 4 (Last Part)
         </button>
     </div>

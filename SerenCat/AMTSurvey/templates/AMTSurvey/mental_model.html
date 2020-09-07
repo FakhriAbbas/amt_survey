@@ -1,16 +1,17 @@
 {% extends "AMTSurvey/base.html" %}
 
+
 {% block page_title %}
-Part 2: Reading Interest & Familiarity
+    Part 2: Reading Interest & Familiarity
 {% endblock %}
 
 {% block page_direction %}
-<h4>Please indicate your level of familiarity or interest in the books presented here.</h4>
-<hr>
+    <h4>Please indicate your level of familiarity or interest in the books presented here.</h4>
+    <hr>
 
-<p style="font-size:18px"> <span style="color:#c40000; padding: 0 2em 0 0;">Familiar </span> select familiar if you have read this book or are familiar with it from friends or a movie.</p>
-<p style="font-size:18px"> <span style="color:#c40000">Interesting </span> &nbsp;&nbsp; select interesting if you find the topic of the book interesting but you have not heard of this book before.</p>
-<p style="font-size:18px"> <span style="color:#c40000; padding: 0 0.2em 0 0">Neither </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select neither if this book is not familiar and not interesting.</p>
+    <p style="font-size:18px"> <span style="color:#c40000; padding: 0 2em 0 0;">Familiar </span> select familiar if you have read this book or are familiar with it from friends or a movie.</p>
+    <p style="font-size:18px"> <span style="color:#c40000">Interesting </span> &nbsp;&nbsp; select interesting if you find the topic of the book interesting but you have not heard of this book before.</p>
+    <p style="font-size:18px"> <span style="color:#c40000; padding: 0 0.2em 0 0">Neither </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select neither if this book is not familiar and not interesting.</p>
 {% endblock %}
 
 
@@ -19,22 +20,15 @@ Part 2: Reading Interest & Familiarity
 
     <div class="container-fluid">
         <div class="row">
+        {% for key, value in books.items %}
             <div class="col-sm-3 ">
-                {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' %}
+                    {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' with data=value cluster_id=key %}
             </div>
-            <div class="col-sm-3">
-            {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' %}
-            </div>
-            <div class="col-sm-3">
-            {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' %}
-            </div>
-            <div class="col-sm-3">
-            {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' %}
-            </div>
+        {% endfor %}
         </div>
-
-
     </div>
+
+
 
 
     <div id="bootstrapbox1" class="container-fluid">
@@ -42,7 +36,7 @@ Part 2: Reading Interest & Familiarity
 
       <div id="row4" class="row row1">
         <div id="cell5" class="bs-cell col-sm-12 col-xs-12 cell1">
-            <button id="button1" class="col-md-12 col-xs-12 button1" onclick="location.href='{% url 'part_3_directions' %}'">
+            <button id="mental_model_btn" class="col-md-12 col-xs-12 button1" >
                 Proceed to Part 3
             </button>
         </div>

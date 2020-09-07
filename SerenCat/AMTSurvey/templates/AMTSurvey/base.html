@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% load static %}
+    {% csrf_token %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <style type="text/css">
@@ -34,8 +39,8 @@
 
 <body>
 
-<div id="bootstrapbox1" class="container-fluid">
-  <div id="row1" class="row row1">
+<div id="bootstrapbox1" class="container">
+  <div id="row1" class="row">
     <div id="cell1" class="bs-cell col-sm-12 col-md-9 col-xs-12 cell1">
         <span id="label1" class="col-xs-12 label1"><h3>
             {% block page_title %}{% endblock %}
@@ -45,22 +50,19 @@
       <img id="image1" src="{% static 'images/book_PNG2120.png' %}" class="col-md-5 col-md-offset-7 col-xs-12 image1" />
     </div>
   </div>
-  <div id="row2" class="row row1">
+  <div id="row2" class="row">
     <div id="cell3" class="bs-cell col-sm-9 col-xs-12 cell1">
       <span id="label2" class="col-xs-12 label1">
-
             {% block page_direction %}{% endblock %}
-
       </span>
     </div>
   </div>
-     <div class="container-fluid">
+     <div class="container">
         {% block content %}{% endblock %}
     </div>
 
 
 </div>
-
 
 </body>
 </html>
