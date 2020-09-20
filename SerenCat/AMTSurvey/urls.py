@@ -15,7 +15,17 @@ urlpatterns = [
     path('save_mental_model', views.save_mental_model, name='save_mental_model'),
     path('save_session_1', views.save_session_1, name='save_session_1'),
     path('save_session_2', views.save_session_2, name='save_session_2'),
-    path('save_post_survey', views.save_post_survey, name='save_post_survey')
+    path('save_post_survey', views.save_post_survey, name='save_post_survey'),
 
+    path('mental_model_1', views.mental_model_1_view, name='mental_model_1'),
+    path('save_mental_model_1', views.save_mental_model_1, name='save_mental_model_1'),
+    path('mental_model_2', views.mental_model_2_view, name='mental_model_2'),
+    path('save_mental_model_2', views.save_mental_model_2, name='save_mental_model_2'),
+    path('mental_model_3', views.mental_model_3_view, name='mental_model_3'),
+    path('save_mental_model_3', views.save_mental_model_3, name='save_mental_model_3'),
+    path('mental_model_4', views.mental_model_4_view, name='mental_model_4'),
+    path('save_mental_model_4', views.save_mental_model_4, name='save_mental_model_4'),
+    path('mental_model_5', views.mental_model_5_view, name='mental_model_5'),
+    path('save_mental_model_5', views.save_mental_model_5, name='save_mental_model_5'),
 
 ]

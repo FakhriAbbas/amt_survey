@@ -43,7 +43,7 @@ def get_isbn_details(isbn, books_dict):
 
 def get_book_url(isbn):
     default_image_url = 'default'
-
+    return default
     google_api_url = 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + str(isbn)
     r = requests.get(google_api_url)
     data = json.loads(r.text)
@@ -59,8 +59,7 @@ def get_book_url(isbn):
                             image_url = data['items'][0]['volumeInfo']['imageLinks']['smallThumbnail']
     return image_url
 
-
-def save_mental_model_response(request, result):
+def save_mental_model_response(request, result, page):
     user_id = request.session.get('USER_ID')
     tokens = result.split(';')[:-1]
     cluster_interest_list = list()
@@ -75,48 +74,55 @@ def save_mental_model_response(request, result):
             elif cluster_v == 'familiar':
                 cluster_familiar_list.append(cluster_id)
             cluster_isbn = values[2]
-    default_storage.save('./data/results/' +  str(user_id) + '/mental_model_response' , ContentFile(result))
-    request.session['familiar_cluster'] = cluster_familiar_list
-    request.session['interest_cluster'] = cluster_interest_list
+    default_storage.save('./data/results/' +  str(user_id) + '/mental_model_response_' + str(page), ContentFile(result))
+    if 'familiar_cluster' in request.session:
+        request.session['familiar_cluster'].append(cluster_familiar_list)
+    else:
+        request.session['familiar_cluster'] = cluster_familiar_list
+    if 'interest_cluster' in request.session:
+        request.session['interest_cluster'].append(cluster_interest_list)
+    else:
+        request.session['interest_cluster'] = cluster_interest_list
 
 def get_familiar_book(request, familiar_list):
     user_id = request.session.get('USER_ID')
-    books_dict = pickle.load(default_storage.open('./data/pickles/books_dict.pkl', mode='rb'))
+    relevance_book_dict = pickle.load(default_storage.open('./data/pickles/relevance_books.pkl', mode='rb'))
     book_list = list()
-    keys_list = list(books_dict.keys())
-    print('start')
-    for i in range(0,10):
-        isbn_ = random.choice(keys_list)
-        title, description, url = get_isbn_details(isbn_, books_dict)
-        book_list.append( {
-                        'isbn' : isbn_ ,
-                        'title' : title,
-                        'description' : description,
-                        'image_url' : url,
-                        'cluster_id' : i
-                        }
-        )
+    for element in range(0,10):
+        cluster_idx = element % len(familiar_list)
+        cluster_id = int(familiar_list[cluster_idx])
+        book_list.append(relevance_book_dict[cluster_id][element])
     return book_list
+
+def get_interest_cluster(request):
+    return parse_response(request, 'interest')
+
+def parse_response(request, condition):
+    user_id = request.session.get('USER_ID')
+    c_list = list()
+    for i in range(1,6):
+        c_file = default_storage.open('./data/results/' + str(user_id) + '/' + 'mental_model_response_' + str(i), mode='r')
+        c_response = c_file.readline()
+        response = c_response.split(';')[:-1]
+        for r in response:
+            if r.split('-')[1] == condition:
+                c_list.append(r.split('-')[0])
+        c_file.close()
+    return c_list
+
+def get_familiar_cluster(request):
+    return parse_response(request, 'familiar')
 
 def get_interest_book(request, interest_list):
     user_id = request.session.get('USER_ID')
-    books_dict = pickle.load(default_storage.open('./data/pickles/books_dict.pkl', mode='rb'))
+    interest_book_dict = pickle.load(default_storage.open('./data/pickles/interest_books.pkl', mode='rb'))
     book_list = list()
-    keys_list = list(books_dict.keys())
-    print('start')
-    for i in range(0,10):
-        isbn_ = random.choice(keys_list)
-        title, description, url = get_isbn_details(isbn_, books_dict)
-        book_list.append( {
-                        'isbn' : isbn_ ,
-                        'title' : title,
-                        'description' : description,
-                        'image_url' : url,
-                        'cluster_id' : i
-                        }
-        )
-
+    for element in range(0,10):
+        cluster_idx = element % len(interest_list)
+        cluster_id = int(interest_list[cluster_idx])
+        book_list.append(interest_book_dict[cluster_id][element])
     return book_list
+
 
 def save_curiosity_session(request, result, session_number):
     user_id = request.session.get('USER_ID')
@@ -134,4 +140,18 @@ def save_post_survey_data(request, q1, q2, q3):
     content = q1 + ';' + q2 + ';' + q3
     default_storage.save('./data/results/' +  str(user_id) + '/post_survey' , ContentFile(content))
 
+def get_books_mental_model_per_page(request, page):
+    user_id = request.session.get('USER_ID')
+    cluster_books_dict = pickle.load(default_storage.open('./data/pickles/clusters_book.pkl', mode='rb'))
+    result = {}
+    for counter, element in enumerate(cluster_books_dict.items()):
+        if ( counter >= (8*(page-1)) ) & ( counter < (page*8) ):
+            key, value = element[0] , element[1]
+            result[key] = value
+        else:
+            continue
+
+    print( len(list(result.keys())) )
+    print(page)
+    return result
 

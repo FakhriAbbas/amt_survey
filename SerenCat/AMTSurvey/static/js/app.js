@@ -95,7 +95,6 @@ $( document ).ready(function() {
        }
     );
 
-
     $("#button_session_1").click( function()
        {
             var checked_radio_list = $("input[type='radio']:checked");
@@ -111,18 +110,18 @@ $( document ).ready(function() {
                 result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
             });
             console.log(result)
-            $.ajax({
-                type: 'POST',
-                url: 'save_session_1',
-                data: {
-                    'response' : result
-                },
-                success: function(data){
-                    if (data['status'] == 1){
-                        window.location.href = data['redirect-url']
-                    }
-                }
-            });
+            // $.ajax({
+            //     type: 'POST',
+            //     url: 'save_session_1',
+            //     data: {
+            //         'response' : result
+            //     },
+            //     success: function(data){
+            //         if (data['status'] == 1){
+            //             window.location.href = data['redirect-url']
+            //         }
+            //     }
+            // });
        }
     );
 
@@ -194,6 +193,156 @@ $( document ).ready(function() {
             });
 
 
+       }
+    );
+
+    $("#mental_model_btn_1").click( function()
+       {
+            var checked_radio_list = $("input[type='radio']:checked");
+            var unchecked_radio_list = $("input[type='radio']:not(:checked)");
+
+            if( unchecked_radio_list.length > 0 ){
+//                alert("Please make sure to respond to each book.")
+//                return;
+            }
+
+            var result = '';
+            $.each( checked_radio_list , function(index, value){
+                result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
+            });
+            console.log(result)
+            $.ajax({
+                type: 'POST',
+                url: 'save_mental_model_1',
+                data: {
+                    'response' : result
+                },
+                success: function(data){
+                    if (data['status'] == 1){
+                        window.location.href = data['redirect-url']
+                    }
+                }
+            });
+       }
+    );
+
+    $("#mental_model_btn_2").click( function()
+       {
+            var checked_radio_list = $("input[type='radio']:checked");
+            var unchecked_radio_list = $("input[type='radio']:not(:checked)");
+
+            if( unchecked_radio_list.length > 0 ){
+//                alert("Please make sure to respond to each book.")
+//                return;
+            }
+
+            var result = '';
+            $.each( checked_radio_list , function(index, value){
+                result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
+            });
+            console.log(result)
+            $.ajax({
+                type: 'POST',
+                url: 'save_mental_model_2',
+                data: {
+                    'response' : result
+                },
+                success: function(data){
+                    if (data['status'] == 1){
+                        window.location.href = data['redirect-url']
+                    }
+                }
+            });
+       }
+    );
+
+    $("#mental_model_btn_3").click( function()
+       {
+            var checked_radio_list = $("input[type='radio']:checked");
+            var unchecked_radio_list = $("input[type='radio']:not(:checked)");
+
+            if( unchecked_radio_list.length > 0 ){
+//                alert("Please make sure to respond to each book.")
+//                return;
+            }
+
+            var result = '';
+            $.each( checked_radio_list , function(index, value){
+                result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
+            });
+            console.log(result)
+            $.ajax({
+                type: 'POST',
+                url: 'save_mental_model_3',
+                data: {
+                    'response' : result
+                },
+                success: function(data){
+                    if (data['status'] == 1){
+                        window.location.href = data['redirect-url']
+                    }
+                }
+            });
+       }
+    );
+
+    $("#mental_model_btn_4").click( function()
+       {
+            var checked_radio_list = $("input[type='radio']:checked");
+            var unchecked_radio_list = $("input[type='radio']:not(:checked)");
+
+            if( unchecked_radio_list.length > 0 ){
+//                alert("Please make sure to respond to each book.")
+//                return;
+            }
+
+            var result = '';
+            $.each( checked_radio_list , function(index, value){
+                result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
+            });
+            console.log(result)
+            $.ajax({
+                type: 'POST',
+                url: 'save_mental_model_4',
+                data: {
+                    'response' : result
+                },
+                success: function(data){
+                    if (data['status'] == 1){
+                        window.location.href = data['redirect-url']
+                    }
+                }
+            });
+       }
+    );
+
+    $("#mental_model_btn_5").click( function()
+       {
+            var checked_radio_list = $("input[type='radio']:checked");
+            var unchecked_radio_list = $("input[type='radio']:not(:checked)");
+
+            if( unchecked_radio_list.length > 0 ){
+//                alert("Please make sure to respond to each book.")
+//                return;
+            }
+
+            var result = '';
+            $.each( checked_radio_list , function(index, value){
+                result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
+            });
+            console.log(result)
+            $.ajax({
+                type: 'POST',
+                url: 'save_mental_model_5',
+                data: {
+                    'response' : result
+                },
+                success: function(data){
+                    if (data['status'] == 1){
+                        window.location.href = data['redirect-url']
+                    }
+                }
+            });
        }
     );
 

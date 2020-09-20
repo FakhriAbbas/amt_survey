@@ -16,15 +16,15 @@
                 <h5 class="card-title"><b>{{ data.title|slice:"90" }}</b>...</h5>
             </div>
             <div class="row">
-                <h5 class="card-title">{{ data.description|slice:"150"}}... <a>Load More</a> </h5>
+                <h5 class="card-title">{{ data.desc|slice:"150"}}... <a>Load More</a> </h5>
             </div>
             <div class="row">
                     Would you like to read this book?
                 <p>
-                    <input class="form-check-input" type="radio" data-isbn="{{ data.isbn }}" name="{{ data.cluster_id }}" id="yes" autocomplete="off" >
+                    <input class="form-check-input" type="radio" data-isbn="{{ data.ISBN }}" name="{{ data.cluster_id }}" id="yes" autocomplete="off" >
                         Yes
                     </input>
-                    <input class="form-check-input" type="radio" data-isbn="{{ data.isbn }}" name="{{ data.cluster_id }}" id="no" autocomplete="off">
+                    <input class="form-check-input" type="radio" data-isbn="{{ data.ISBN }}" name="{{ data.cluster_id }}" id="no" autocomplete="off">
                         No
                     </input>
                 </p>

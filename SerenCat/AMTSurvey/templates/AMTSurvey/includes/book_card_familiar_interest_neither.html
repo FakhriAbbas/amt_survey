@@ -17,22 +17,22 @@
     </div>
 
     <div class="row row justify-content-md-center" style="height: 120px;">
-        <p class="card-text" >{{ data.description|slice:"150" }} ... <a>Load More</a>
+        <p class="card-text" >{{ data.desc|slice:"150" }} ... <a>Load More</a>
             </p>
     </div>
 
     <div class="row" style="height: 50px;">
         <div>
             <label class=" form-check-label active">
-            <input class="form-check-input" type="radio" data-isbn="{{ data.isbn }}" name="{{ cluster_id }}" id="interest" autocomplete="off" >
+            <input class="form-check-input" type="radio" data-isbn="{{ data.ISBN }}" name="{{ cluster_id }}" id="interest" autocomplete="off" >
                 Interesting
             </label>
             <label class="  form-check-label">
-            <input class="form-check-input" type="radio" data-isbn="{{ data.isbn }}" name="{{ cluster_id }}" id="familiar" autocomplete="off">
+            <input class="form-check-input" type="radio" data-isbn="{{ data.ISBN }}" name="{{ cluster_id }}" id="familiar" autocomplete="off">
                 Familiar
             </label>
             <label class="  form-check-label">
-            <input class="form-check-input" type="radio" data-isbn="{{ data.isbn }}" name="{{ cluster_id }}" id="neither" autocomplete="off">
+            <input class="form-check-input" type="radio" data-isbn="{{ data.ISBN }}" name="{{ cluster_id }}" id="neither" autocomplete="off">
                 Neither
             </label>
         </div>
