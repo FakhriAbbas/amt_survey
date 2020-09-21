@@ -71,8 +71,8 @@ $( document ).ready(function() {
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
             if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+                alert("Please make sure to respond to each book.")
+                return;
             }
 
             var result = '';
@@ -100,9 +100,10 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length-10 > 0 ){
+                console.log()
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length-10) + " book(s) left." )
+                return;
             }
 
             var result = '';
@@ -130,9 +131,10 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length-10 > 0 ){
+                console.log()
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length-10) + " book(s) left." )
+                return;
             }
 
             var result = '';
@@ -200,10 +202,10 @@ $( document ).ready(function() {
        {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
-
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            console.log(unchecked_radio_list.length)
+            if( unchecked_radio_list.length > (24-8) ){
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length - 16) + ' book(s) left.' )
+                return;
             }
 
             var result = '';
@@ -231,9 +233,9 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length > (24-8) ){
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length - 16) + ' book(s) left.' )
+                return;
             }
 
             var result = '';
@@ -261,9 +263,9 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length > (24-8) ){
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length - 16) + ' book(s) left.' )
+                return;
             }
 
             var result = '';
@@ -291,9 +293,9 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length > (24-8) ){
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length - 16) + ' book(s) left.' )
+                return;
             }
 
             var result = '';
@@ -321,9 +323,9 @@ $( document ).ready(function() {
             var checked_radio_list = $("input[type='radio']:checked");
             var unchecked_radio_list = $("input[type='radio']:not(:checked)");
 
-            if( unchecked_radio_list.length > 0 ){
-//                alert("Please make sure to respond to each book.")
-//                return;
+            if( unchecked_radio_list.length > (24-8) ){
+                alert("Please make sure to respond to each book. You have " + (unchecked_radio_list.length - 16) + ' book(s) left.' )
+                return;
             }
 
             var result = '';
@@ -358,14 +360,7 @@ $( document ).ready(function() {
                 },
                 success: function(data){
                     $("#modal_holder" ).html(data);
-
                     $('#book_details_modal').modal('toggle');
-
-                    console.log(data)
-//                    if (data['status'] == 1){
-//                        console.log(data)
-//                        console.log(data['book_details'])
-//                    }
                 }
             });
 

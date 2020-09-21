@@ -153,7 +153,5 @@ def get_books_mental_model_per_page(request, page):
         else:
             continue
 
-    print( len(list(result.keys())) )
-    print(page)
     return result
 
