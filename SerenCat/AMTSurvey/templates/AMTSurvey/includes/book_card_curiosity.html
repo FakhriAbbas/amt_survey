@@ -16,7 +16,7 @@
                 <h5 class="card-title"><b>{{ data.title|slice:"90" }}</b>...</h5>
             </div>
             <div class="row">
-                <h5 class="card-title">{{ data.desc|slice:"150"}}... <a>Load More</a> </h5>
+                <h5 class="card-title">{{ data.desc|slice:"150"}}... <a href='#' id="load_more_link-{{data.ISBN}}" data-isbn="{{ data.ISBN }}">Load More</a> </h5>
             </div>
             <div class="row">
                     Would you like to read this book?

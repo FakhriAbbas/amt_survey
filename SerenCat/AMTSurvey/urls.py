@@ -28,4 +28,7 @@ urlpatterns = [
     path('mental_model_5', views.mental_model_5_view, name='mental_model_5'),
     path('save_mental_model_5', views.save_mental_model_5, name='save_mental_model_5'),
 
+    path('get_book_details', views.get_book_details, name='get_book_details'),
+
+
 ]

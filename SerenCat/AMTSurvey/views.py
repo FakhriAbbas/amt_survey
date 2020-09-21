@@ -179,3 +179,12 @@ def save_mental_model_5(request):
     response = { 'status' : 1 , 'redirect-url' : reverse('part_3_directions') }
     return HttpResponse(json.dumps(response), content_type="application/json")
 
+def get_book_details(request):
+    isbn = request.POST.get("ISBN", '')
+    books_dict = pickle.load(default_storage.open('./data/pickles/books_space_dict.pkl', mode='rb'))
+    book = books_dict[isbn]
+
+    response = { 'status' : 1 , 'book_details' : book }
+    return render(request, 'AMTSurvey/includes/book_detail_modal.html', {'title' : book['title'], 'desc': book['desc'] , 'image_url': book['image_url']})
+    # return HttpResponse(json.dumps(response), content_type="application/json")
+

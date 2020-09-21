@@ -17,7 +17,11 @@
     </div>
 
     <div class="row row justify-content-md-center" style="height: 120px;">
-        <p class="card-text" >{{ data.desc|slice:"150" }} ... <a>Load More</a>
+        <p class="card-text" >{{ data.desc|slice:"150" }} ... <a id="load_more_link-{{data.ISBN}}" data-isbn="{{ data.ISBN }}">Load More</a>
+
+                <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#flipFlop">-->
+                    <!--Click Me-->
+                <!--</button>-->
             </p>
     </div>
 

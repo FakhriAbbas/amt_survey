@@ -91,6 +91,7 @@ def get_familiar_book(request, familiar_list):
     for element in range(0,10):
         cluster_idx = element % len(familiar_list)
         cluster_id = int(familiar_list[cluster_idx])
+        relevance_book_dict[cluster_id][element]['cluster_id'] = cluster_id
         book_list.append(relevance_book_dict[cluster_id][element])
     return book_list
 
@@ -120,6 +121,7 @@ def get_interest_book(request, interest_list):
     for element in range(0,10):
         cluster_idx = element % len(interest_list)
         cluster_id = int(interest_list[cluster_idx])
+        interest_book_dict[cluster_id][element]['cluster_id'] = cluster_id
         book_list.append(interest_book_dict[cluster_id][element])
     return book_list
 

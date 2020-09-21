@@ -14,15 +14,14 @@
     <p style="font-size:18px"> <span style="color:#c40000; padding: 0 0.2em 0 0">Neither </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select neither if this book is not familiar and not interesting.</p>
 {% endblock %}
 
-
 {% block content %}
-
 
     <div class="container-fluid">
         <div class="row">
         {% for key, value in books.items %}
             <div class="col-sm-3 ">
                     {%include 'AMTSurvey/includes/book_card_familiar_interest_neither.html' with data=value cluster_id=key %}
+
             </div>
         {% endfor %}
         </div>
@@ -41,4 +40,11 @@
       </div>
     </div>
 
+    </div>
+  </div>
+
+
+</div>
+
 {% endblock %}
+

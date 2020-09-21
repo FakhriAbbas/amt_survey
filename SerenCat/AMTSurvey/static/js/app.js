@@ -110,18 +110,18 @@ $( document ).ready(function() {
                 result = value.name + '-' + value.id +  '-' + $(value).data( "isbn" ) + ';' + result ;
             });
             console.log(result)
-            // $.ajax({
-            //     type: 'POST',
-            //     url: 'save_session_1',
-            //     data: {
-            //         'response' : result
-            //     },
-            //     success: function(data){
-            //         if (data['status'] == 1){
-            //             window.location.href = data['redirect-url']
-            //         }
-            //     }
-            // });
+             $.ajax({
+                 type: 'POST',
+                 url: 'save_session_1',
+                 data: {
+                     'response' : result
+                 },
+                 success: function(data){
+                     if (data['status'] == 1){
+                         window.location.href = data['redirect-url']
+                     }
+                 }
+             });
        }
     );
 
@@ -343,6 +343,32 @@ $( document ).ready(function() {
                     }
                 }
             });
+       }
+    );
+
+
+     $('[id*="load_more_link"]').click( function()
+       {
+            var isbn = this.id.split('-')[1]
+            $.ajax({
+                type: 'POST',
+                url: 'get_book_details',
+                data: {
+                    'ISBN' : isbn
+                },
+                success: function(data){
+                    $("#modal_holder" ).html(data);
+
+                    $('#book_details_modal').modal('toggle');
+
+                    console.log(data)
+//                    if (data['status'] == 1){
+//                        console.log(data)
+//                        console.log(data['book_details'])
+//                    }
+                }
+            });
+
        }
     );
 
