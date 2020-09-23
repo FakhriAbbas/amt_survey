@@ -101,7 +101,6 @@ def thank_you_view(request):
         'user_id' : request.session.get('USER_ID')
     }
     del request.session['USER_ID']
-    del request.session['APP_MODE']
     return render(request, 'AMTSurvey/thank_you.html', context)
 
 def save_session_1(request):
