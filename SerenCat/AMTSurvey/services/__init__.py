@@ -88,11 +88,18 @@ def get_familiar_book(request, familiar_list):
     user_id = request.session.get('USER_ID')
     relevance_book_dict = pickle.load(default_storage.open('./data/pickles/relevance_books.pkl', mode='rb'))
     book_list = list()
+    isbn_list = list()
     for element in range(0,10):
         cluster_idx = element % len(familiar_list)
         cluster_id = int(familiar_list[cluster_idx])
-        relevance_book_dict[cluster_id][element]['cluster_id'] = cluster_id
-        book_list.append(relevance_book_dict[cluster_id][element])
+        for i in range(0,10):
+            if relevance_book_dict[cluster_id][i]['ISBN'] in isbn_list:
+                continue
+            else:
+                break
+        relevance_book_dict[cluster_id][i]['cluster_id'] = cluster_id
+        isbn_list.append(relevance_book_dict[cluster_id][i]['ISBN'])
+        book_list.append(relevance_book_dict[cluster_id][i])
     return book_list
 
 def get_interest_cluster(request):
@@ -118,11 +125,18 @@ def get_interest_book(request, interest_list):
     user_id = request.session.get('USER_ID')
     interest_book_dict = pickle.load(default_storage.open('./data/pickles/interest_books.pkl', mode='rb'))
     book_list = list()
+    isbn_list = list()
     for element in range(0,10):
         cluster_idx = element % len(interest_list)
         cluster_id = int(interest_list[cluster_idx])
-        interest_book_dict[cluster_id][element]['cluster_id'] = cluster_id
-        book_list.append(interest_book_dict[cluster_id][element])
+        for i in range(0,10):
+            if interest_book_dict[cluster_id][i]['ISBN'] in isbn_list:
+                continue
+            else:
+                break
+        interest_book_dict[cluster_id][i]['cluster_id'] = cluster_id
+        isbn_list.append( interest_book_dict[cluster_id][i]['ISBN'] )
+        book_list.append(interest_book_dict[cluster_id][i])
     return book_list
 
 
